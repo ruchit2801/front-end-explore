@@ -1,25 +1,25 @@
 h2{
 	text-align: center;
-	text-decoration: bold;
+	text-decoration: bold; 
 }
 
 table{
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto; /* align table to center by setting left and right margins to auto*/
 }
 
 td{
 	/*padding: 50px;*/
-	width: 100px;
-	height: 100px;
+	width: 100px;   		/*commented code padding: 50px can also be used instead*/
+	height: 100px;			/*This makes each cell greater in area*/
 }
 
 tr td:nth-of-type(2){
-	border-left: 1px solid black;
+	border-left: 1px solid black;	/*sets border of middle vertical column*/
 	border-right: 1px solid black;
 }
 
 table tr:nth-child(2) td{
 	border-top: 1px solid black;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid black; /*set border of middle horizontal*/
 }
