@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<style type="text/css">
+		/*img{
+			height: 250px;
+			width: 300px;
+		}*/
+		.thumbnail{
+			height: 200px;
+			width: 100%;
+			margin: 0;
+			/*overflow: auto; */
+		}
+
+		.thumbnail img{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		body{
+			padding-top: 70px;
+		}
+
+		.jumbotron{
+			color: #2c3e50; 
+			background: #ecf0f1;
+		}
+
+		.navbar-inverse{
+			background: #2c3e50;
+		}
+
+		.navbar-inverse .navbar-nav>li>a{
+			color: white;
+		}
+
+		.navbar-inverse .navbar-brand{
+			color: white;
+		}
+	</style>
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-picture" aria-hidden="true"></span> IMAGES</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    	<ul class="nav navbar-nav">
+    		<li><a href="#">About</a></li>
+    		<li><a href="#">Contact</a></li>
+    	</ul>
+      	<ul class="nav navbar-nav navbar-right">
+      		<li><a href="#">Sign Up</a></li>
+      		<li><a href="#">Login</a></li> 
+      	</ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<div class="container">
+		<div class="jumbotron">
+			<h1><i class="fas fa-camera-retro"></i> The Image Gallery</h1>
+			<p>Some of the beautiful Images I found on Google</p>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="http://r.ddmcdn.com/s_f/o_1/cx_297/cy_0/cw_1201/ch_1201/w_720/APL/uploads/2014/08/wild-animal-safari-zebra-5371037.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://i.ytimg.com/vi/3tKHZt2lpl0/maxresdefault.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="http://www.goasean.com/wp-content/uploads/2017/09/goa_7_animals_southeast_asia_orangutan.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="http://www.abc.net.au/news/image/8771022-3x2-700x467.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPjQTUZxjxyjgdkbHTI0z8JrfxN4UOVFpI_DtZw4dJQ7dnRw7DBQ">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="http://www.summersymphonylive.com/wp-content/uploads/2018/05/terrific-pictur-of-animals-picture-qygjxz.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://noahsarkzoo.files.wordpress.com/2014/10/buta-1.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://www.cheatsheet.com/wp-content/uploads/2018/04/Deer.jpg">
+				</div>
+			</div>
+			<div class="col-lg-4 col-sm-6">
+				<div class="thumbnail">
+					<img src="https://guidetoiceland.imgix.net/336301/x/0/wildlife-and-animals-in-iceland-19?auto=compress%2Cformat&ch=Width%2CDPR&dpr=1&h=630&ixlib=php-2.1.0&w=1200&s=6f60412c39c848c1e9fe1682bf4b90e2">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
